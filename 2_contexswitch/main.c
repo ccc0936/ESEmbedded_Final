@@ -47,15 +47,16 @@ void task3(void)
 {
 	while (1)
 	{
-		int t1 = 0;
-		int t2 = 1;
-		int t3 = 1;
-		while (t3 > 0)
+		int t1,t2,next;
+		t1=0;
+		t2 = 1;
+		next = 1;
+		while (next > 0)
 		{	
-			printf("%d ",t3);
-			t3=t1+t2;
+			printf("%d ",next);
+			next=t1+t2;
 			t1=t2;
-			t2=t3;
+			t2=next;
 		}
 		printf("\n\n\n");
 	}
